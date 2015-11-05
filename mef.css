@@ -1,0 +1,32 @@
+body
+{
+	width: 50%;
+	position: relative;
+	margin-left: 25%;
+	background: url("img_body.jpeg");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+header
+{
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 10px ridge;
+	text-align: right;
+	padding-bottom: 8px;
+}
+header h1
+{
+	font-family: impact;
+	font-size: 300%;
+	margin: 0px 5px;
+}
+header h2
+{
+	margin: 0px 5px;
+}
+footer
+{
+	position: fixed;
+	bottom: 0px;
+}
