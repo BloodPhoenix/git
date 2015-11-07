@@ -1,32 +1,96 @@
 body
 {
-	width: 50%;
-	position: relative;
-	margin-left: 25%;
-	background: url("img_body.jpeg");
-	background-repeat: no-repeat;
-	background-position: top;
-	background-size: cover;
+	font-size: 18px;
+	background-color: rgb(200, 200, 200);
+	margin: 0px 10%;
 }
 header
 {
-	background-color: rgba(255, 255, 255, 0.8);
-	border: 10px ridge;
+	width: 125%;
+	margin-left: -12.5%;
+	background: url("img_header.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 	text-align: right;
-	padding-bottom: 8px;
+	color: white;
+	font-family: 'Police titre', impact;
+}
+@font-face {
+	font-family: 'Police titre';
+	src: url("KeepCalm-Medium.ttf");
 }
 header h1
 {
-	font-family: impact;
-	font-size: 300%;
-	margin: 0px 5px;
+	font-size: 400%;
+	margin: 0px;
+	padding-right: 5%;
 }
 header h2
 {
-	margin: 0px 5px;
+	font-size: 200%;
+	margin: 0px;
+	padding-right: 5%;
+}
+nav
+{
+	text-align: center;
+	background: url("img_nav.png");
+	border: 10px ridge white;
+	width: 100%;
+}
+nav ul
+{
+	list-style-type: none;
+	margin: 10px;
+}
+nav li
+{
+	padding: 0 5%;
+	display: inline;
+}
+nav ul li a
+{
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover
+{
+	color: red;
+	text-decoration: underline;
+}
+article
+{
+	display: inline-block;
+	background: url("img_text.png");
+	width: 60%;
+	padding-left: 10px;
+	margin: 5% 7% 150px 0;
+	border: 2px solid black;
+	border-radius: 0 15% 0 15%;
+}
+aside
+{
+	background: url("img_text.png");
+	font-style: italic;
+	width: 28%;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 5%;
+	background-color: white;
+	border: 2px solid black;
+	padding: 1%;
 }
 footer
 {
 	position: fixed;
 	bottom: 0px;
+	margin-left: -10%;
+	width: 125%;
+	background: url("img_footer.jpg");
+	background-size: contain;
+}
+footer p
+{
+	margin-left: 10%;
 }
