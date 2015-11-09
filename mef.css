@@ -1,8 +1,10 @@
 body
 {
+	position: absolute;
 	font-size: 18px;
 	background-color: rgb(200, 200, 200);
 	margin: 0px 10%;
+	width: 80%;
 }
 header
 {
@@ -14,6 +16,7 @@ header
 	text-align: right;
 	color: white;
 	font-family: 'Police titre', impact;
+	height: 100px;
 }
 @font-face {
 	font-family: 'Police titre';
@@ -21,15 +24,8 @@ header
 }
 header h1
 {
-	font-size: 400%;
-	margin: 0px;
-	padding-right: 5%;
-}
-header h2
-{
-	font-size: 200%;
-	margin: 0px;
-	padding-right: 5%;
+	margin: 0;
+	padding: 25px 5% 0 0;
 }
 nav
 {
@@ -64,8 +60,8 @@ article
 	display: inline-block;
 	background: url("img_text.png");
 	width: 60%;
-	padding-left: 10px;
-	margin: 5% 7% 150px 0;
+	padding: 0 0 15px 10px;
+	margin: 5% 0 150px;
 	border: 2px solid black;
 	border-radius: 0 15% 0 15%;
 }
@@ -73,10 +69,11 @@ aside
 {
 	background: url("img_text.png");
 	font-style: italic;
-	width: 28%;
+	width: 30%;
 	display: inline-block;
-	vertical-align: top;
-	margin-top: 5%;
+	position: absolute;
+	right: 0;
+	margin: 5% 0 150px;
 	background-color: white;
 	border: 2px solid black;
 	padding: 1%;
@@ -93,4 +90,42 @@ footer
 footer p
 {
 	margin-left: 10%;
+}
+@media (max-width:1100px)
+{
+	body
+	{
+		width: 100%;
+		margin: 0;
+	}
+	header
+	{
+		width: 100%;
+		margin: 0;
+	}
+	nav
+	{
+		width: 90%;
+		margin-left: 5%;
+	}
+	nav li
+	{
+		padding: 0 3%;
+	}
+}
+@media (max-width:645px)
+{
+	nav
+	{
+		width: 60%;
+		margin: 0 20% 0 20%;
+	}
+	nav li
+	{
+		display: list-item;
+	}
+	nav ul
+	{
+		list-style-type: circle;
+	}
 }
