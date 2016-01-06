@@ -1,22 +1,24 @@
 body
 {
-	position: absolute;
 	font-size: 18px;
 	background-color: rgb(200, 200, 200);
-	margin: 0px 10%;
-	width: 80%;
+	margin: 0;
 }
 header
 {
-	width: 125%;
-	margin-left: -12.5%;
 	background: url("img_header.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	text-align: right;
 	color: white;
 	font-family: 'Police titre', impact;
-	height: 100px;
+	height: 120px;
+}
+.contenu
+{
+	position: absolute;
+	margin: 0px 10%;
+	width: 80%;
 }
 @font-face {
 	font-family: 'Police titre';
@@ -30,8 +32,9 @@ h1
 {
 	font-size: 200%;
 }
-header h1
+header p
 {
+	font-size: 200%;
 	margin: 0;
 	padding: 25px 5% 0 0;
 }
@@ -39,26 +42,33 @@ nav
 {
 	text-align: center;
 	background: url("img_nav.png");
-	border: 10px ridge white;
-	margin-left: -12.5%;
-	width: 123%;
+	height: 40px;
+	padding-top: 10px;
+	border-radius: 0 0 25px 25px;
 }
 nav ul
 {
+	display: inline-block;
 	list-style-type: none;
-	margin: 10px;
 	color: white;
+	margin: 0;
+	padding: 0;
+	width: 100%
 }
 nav ul li
 {
-	padding: 0 2%;
-	display: inline;
+	display: inline-block;
+	margin: 0 1%;
+	position: relative;
 }
 nav ul li a
 {
 	color: white;
 	font-weight: bold;
 	text-decoration: none;
+	display: block;
+	padding: 5px 15px;
+	background-color: rgba(255, 255, 255, 0.3);
 }
 a
 {
@@ -66,8 +76,14 @@ a
 }
 a:hover
 {
-	color: red;
 	text-decoration: underline;
+	color: red;
+}
+nav ul li a:hover
+{
+	text-decoration: none;
+	background-color: rgba(255, 0, 0, 0.4);
+	color: white;
 }
 h2 a
 {
@@ -85,7 +101,7 @@ article
 }
 #lastArticle
 {
-	margin-bottom: 90px;
+	margin-bottom: 70px;
 }
 article p
 {
@@ -94,6 +110,20 @@ article p
 article li
 {
 	margin-bottom: 5px;
+}
+.sommaire
+{
+	display: inline-block;
+	padding: 0 15px;
+	margin: 0 0 5px 40%;
+	color: white;
+	background-image: radial-gradient(black 30%, white);
+	border-radius: 50%;
+}
+.sommaire:hover
+{
+	color: black;
+	background-image: radial-gradient(white 30%, black);
 }
 .soustitre
 {
@@ -133,8 +163,7 @@ footer
 {
 	position: fixed;
 	bottom: 0px;
-	margin-left: -10%;
-	width: 125%;
+	width: 100%;
 	background: url("img_footer.jpg");
 	background-size: contain;
 }
@@ -143,37 +172,28 @@ footer p
 	color: white;
 	margin-left: 10%;
 }
-@media (max-width:1100px)
+@media (max-width:900px)
 {
-	body
+	.contenu
 	{
 		width: 100%;
 		margin: 0;
 	}
 	header
 	{
-		width: 100%;
-		margin: 0;
+		border-bottom: 5px groove rgb(100, 100, 255);
 	}
-	nav li
-	{
-		padding: 0 3%;
-	}
-}
-@media (max-width:645px)
-{
 	nav
 	{
-		width: 60%;
-		margin: 0 20% 0 20%;
+		border: 2px solid black;
+		margin-left: 25%;
+		width: 50%;
+		height: 200px;
 	}
-	nav li
+	nav ul li
 	{
 		display: list-item;
-	}
-	nav ul
-	{
-		list-style-type: none;
+		width:
 	}
 }
 /* Calculatrice !! */
