@@ -1,7 +1,7 @@
 body
 {
 	font-size: 18px;
-	background-color: rgb(200, 200, 200);
+	background-color: rgb(100, 100, 100);
 	margin: 0;
 }
 header
@@ -42,6 +42,7 @@ nav
 {
 	text-align: center;
 	background: url("img_nav.png");
+	border: 1px solid black;
 	height: 40px;
 	padding-top: 10px;
 	border-radius: 0 0 25px 25px;
@@ -66,6 +67,7 @@ nav ul li a
 	color: white;
 	font-weight: bold;
 	text-decoration: none;
+	font-variant: small-caps;
 	display: block;
 	padding: 5px 15px;
 	background-color: rgba(255, 255, 255, 0.3);
@@ -140,6 +142,11 @@ article li
 	text-align: right;
 	padding-right: 20px;
 }
+.vid iframe
+{
+	width: 90%;
+	height: 315px;
+}
 aside
 {
 	background: url("img_text.png");
@@ -164,13 +171,18 @@ footer
 	position: fixed;
 	bottom: 0px;
 	width: 100%;
-	background: url("img_footer.jpg");
-	background-size: contain;
+	background-image: linear-gradient(rgba(100, 100, 100, 0.7), black 70%);
 }
-footer p
+footer p:first-child
 {
 	color: white;
+	width: 70%;
 	margin-left: 10%;
+	padding-top: 20px;
+}
+footer *
+{
+	display: inline-block;
 }
 @media (max-width:900px)
 {
@@ -193,7 +205,14 @@ footer p
 	nav ul li
 	{
 		display: list-item;
-		width:
+	}
+	footer p:first-child
+	{
+		padding-top: 0;
+	}
+	footer p
+	{
+		margin-bottom: 5px;
 	}
 }
 /* Calculatrice !! */
